@@ -1,0 +1,52 @@
+.header
+	padding: 22px 0
+	+f(16px, 500, 1.1)
+	+fnr
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 10
+	&:not(.header_main)
+		color: #1B273D
+		background-color: #fff
+	&_main
+		color: #fff
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__nav
+	&__phone
+		color: currentColor
+		transition: opacity .3s
+		+hover
+			opacity: .7
+
+.logo
+	svg
+		path
+			.header_main &
+				fill: #fff !important
+
+.nav
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	&__list
+		display: flex
+		flex-wrap: wrap
+		&:not(:last-child)
+			+css-lock(30,70,1024,1440,margin-right)
+	li
+		display: block
+		&:not(:last-child)
+			+css-lock(30,70,1024,1440,margin-right)
+		a
+			color: currentColor
+			opacity: .5
+			transition: opacity .3s
+			+hover
+				opacity: .7
+			&.is-active
+				opacity: 1

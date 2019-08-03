@@ -1,7 +1,151 @@
 //FONTS
 =fontpath($name, $name1, $file)
-	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+  src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
 =fontdefault($style, $weight, $name)
-	font-family: $name
-	font-style: $style
-	font-weight: $weight
+  font-family: $name
+  font-style: $style
+  font-weight: $weight
+
+$NoirPro: 'Noir-Pro'
+=fnr
+  font-family: $NoirPro, sans-serif
+  font-weight: 500
+=fny
+  font-family: 'New York', sans-serif
+  font-weight: 500
+
+@font-face
+  +fontdefault(normal, 500, $NoirPro)
+  +fontpath('NoirPro-Medium', 'NoirPro-Medium', NoirPro-Medium)
+
+$timesBold: 'Times'
+=ftb
+  font-family: $timesBold, sans-serif
+  
+// Times-Bold
+@font-face
+  +fontdefault(normal, 700, $timesBold)
+  +fontpath('Times-Bold', 'Times-Bold', Times-Bold)
+
+// Roboto
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Bold.woff2') format("woff2"), url('Roboto-Bold.woff') format("woff")
+  font-weight: bold
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-MediumItalic.woff2') format("woff2"), url('Roboto-MediumItalic.woff') format("woff")
+  font-weight: 500
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-BlackItalic.woff2') format("woff2"), url('Roboto-BlackItalic.woff') format("woff")
+  font-weight: 900
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-BoldCondensedItalic.woff2') format("woff2"), url('Roboto-BoldCondensedItalic.woff') format("woff")
+  font-weight: bold
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Medium.woff2') format("woff2"), url('Roboto-Medium.woff') format("woff")
+  font-weight: 500
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Thin.woff2') format("woff2"), url('Roboto-Thin.woff') format("woff")
+  font-weight: 100
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Light.woff2') format("woff2"), url('Roboto-Light.woff') format("woff")
+  font-weight: 300
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Regular.woff2') format("woff2"), url('Roboto-Regular.woff') format("woff")
+  font-weight: normal
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-ThinItalic.woff2') format("woff2"), url('Roboto-ThinItalic.woff') format("woff")
+  font-weight: 100
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-LightItalic.woff2') format("woff2"), url('Roboto-LightItalic.woff') format("woff")
+  font-weight: 300
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Italic.woff2') format("woff2"), url('Roboto-Italic.woff') format("woff")
+  font-weight: normal
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-CondensedItalic.woff2') format("woff2"), url('Roboto-CondensedItalic.woff') format("woff")
+  font-weight: normal
+  font-style: italic
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Condensed.woff2') format("woff2"), url('Roboto-Condensed.woff') format("woff")
+  font-weight: normal
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Black.woff2') format("woff2"), url('Roboto-Black.woff') format("woff")
+  font-weight: 900
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-BoldCondensed.woff2') format("woff2"), url('Roboto-BoldCondensed.woff') format("woff")
+  font-weight: bold
+  font-style: normal
+
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-BoldItalic.woff2') format("woff2"), url('Roboto-BoldItalic.woff') format("woff")
+  font-weight: bold
+  font-style: italic
+
+// New York
+@font-face 
+	font-family: 'New York'
+	src: url('../fonts/NewYork-medium.woff2') format('woff2'), url('../fonts/NewYork-medium.woff') format('woff')
+	font-weight: 500
+	font-style: normal
+
+
+
+

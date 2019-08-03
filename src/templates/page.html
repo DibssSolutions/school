@@ -1,50 +1,59 @@
 ---
 title: Index page
+main: true
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
+	{{ header.block({ class: 'header_main' }) }}
 
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
+	<div class="fullpage js-fullpage fp-auto-height-responsive" style="overflow: hidden;">
 
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
+		<section class="main-section main-section_first js-section js-lazy" data-anchor="main" data-src="./img/first-screen-bg-@1-5x.jpg">
+			<div class="main-section__wrap inner-lg">
+				<div class="main-section__img"><img data-src="./img/main-slider/1.png" alt="img" class="js-lazy"></div>
+				<div class="main-section__middle">
+					<h1 class="main-section__title-lg title-main">Русская национальная балетная школа</h1>
+					<div class="main-section__text flex-end">Thought experiments (Gedankenexperimenten) are “facts” in the sense that they have a “real life” correlate in the form of electrochemical activity in the brain. But it is quite obvious that they do not relate to facts “out there”.</div>
+				</div>
+			</div>
+		</section>
 
+		<section class="main-section main-section_children js-section" data-anchor="activities-for-children">
+			<div class="main-section__wrap inner-lg">
+				<div class="main-section__img"><img data-src="./img/main-slider/2.png" alt="img" class="js-lazy"></div>
+				<div class="main-section__sb">
+					<div class="main-section__classes">
+						<h3 class="main-section__title title">Занятия:</h3>
+						<ul class="main-section__list">
+							{% for text in ['БАЛЕТ ДЛЯ ДЕТЕЙ', 'ПРОФИЛАКТИКА ПЛОСКОСТОПИЯ', 'МУЗЫКАЛЬНАЯ РИТМИКА', 'БАЛЕТНАЯ ГИМНАСТИКА', 'АНГЛИЙСКИЙ В ИГРОВОЙ ФОРМЕ', 'ШКОЛА РАННЕГО РАЗВИТИЯ', 'ИСПРВЛЕНИЕ ОСАНКИ'] %}
+							    <li><a href="#">{{ text }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+					<h2 class="main-section__title-lg title-main flex-end">Занятия для детей</h2>
+				</div>
+			</div>
+		</section>
 
-	{# checkbox exepmle #}
-	<p>{{ mixins.checkbox() }}</p>
-	<p>
-		{{ mixins.checkbox({
-			checked: true,
-			name: 'exemple-name',
-			text: 'checkbox-checked'
-		}) }}
-	</p>
-	{# radio exepmle #}
-	{{ mixins.checkbox({
-		name: 'exemple-name',
-		text: 'text',
-		radio: true
-	}) }}
-	
+		<section class="main-section main-section_adult js-section" data-anchor="adult-activities">
+			<div class="main-section__wrap inner-lg">
+				<div class="main-section__img"><img data-src="./img/main-slider/3.png" alt="img" class="js-lazy"></div>
+				<div class="main-section__third-bottom">
+					<div class="main-section__classes main-section__classes_black">
+						<h3 class="main-section__title title">Занятия:</h3>
+						<ul class="main-section__list">
+							{% for text in ['БАЛЕТ ДЛЯ ВЗРОСЛЫХ', 'ПИЛАТЕС', 'ПОСТУРАЛЬНАЯ ГИМНАСТИКА', 'ИЛЗЕ ЛИЕПА МЕТОД', 'СОВЕРЕМЕННЫЙ ТАНЕЦ', 'ВОССТАНОВЛЕНИЕ', 'СПОРТСМЕНОВ'] %}
+							    <li><a href="#">{{ text }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+					<h2 class="main-section__title-lg title-main">Занятия для взрослых</h2>
+				</div>
+			</div>
+		</section>
 
-	{# breadcrumbs exepmle #}
-	{{ mixins.breadcrumbs({
-		list: ['Главная','Внутренняя','Корзина']
-	}) }}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+	</div>
 
 {% endblock %}

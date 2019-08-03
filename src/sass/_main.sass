@@ -1,3 +1,140 @@
-.block
-	display: flex
-	// remove this
+.main-section
+	position: relative
+	height: 100vh
+	color: #fff
+	+css-lock(12,20,767,1800)
+	+ftb
+	overflow: hidden
+	background-size: cover
+	background-repeat: no-repeat
+	background-color: #303D57
+	&_children
+		background-image: linear-gradient(136deg, #8FCEEA 0%, #8FCEEA 100%)
+	&_adult
+		background-image: linear-gradient(-44deg, #A57951 0%, #FFBD81 100%)
+	&__wrap
+		position: relative
+		padding-top: 100px
+		margin-bottom: 100px
+		overflow: hidden
+		width: 100%
+		height: 100vh
+		display: flex
+	&__img
+		position: absolute
+		bottom: 0
+		left: 50%
+		width: 100%
+		.main-section_first &
+			max-width: 1124px
+			transform: translateX(-42.5%)
+			max-height: 85.5%
+		.main-section_children &
+			max-width: 1489px
+			transform: translate(-61.5%,8%)
+			max-height: 100%
+		.main-section_adult &
+			max-width: 1327px
+			max-height: 100%
+			transform: translate(-50%,10.5%)
+		img
+			max-width: 100%
+			max-height: 100%
+			display: block
+	&__middle
+		position: relative
+		z-index: 1
+		width: 100%
+		align-self: center
+		display: flex
+		flex-direction: column
+		+clr
+	&__title-lg
+		margin-bottom: 62px
+		.main-section_first &
+			+css-lock(248,781,767,1440,max-width)
+		.main-section_children &
+			+css-lock(0,110,767,1440,margin-top)
+			margin-left: auto
+			+css-lock(248,428,767,1440,max-width)
+			align-self: flex-start
+		.main-section_adult &
+			+css-lock(10,90,767,1440,margin-bottom)
+			+css-lock(248,495,767,1440,max-width)
+			align-self: flex-end
+	&__text
+		position: relative
+		padding-left: 70px
+		line-height: 2.2
+		align-self: flex-end
+		+css-lock(325,554,767,1440,max-width)
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 53px
+			height: 53px
+			background-image: url("data:image/svg+xml,%0A%3Csvg width='53px' height='35px' viewBox='0 0 53 35' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='home' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Home' transform='translate(-1243.000000, -642.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-3' transform='translate(1243.000000, 642.000000)'%3E%3Cpath d='M2.2,35 L0.676923077,30.5464927 C5.52820513,29.233279 9.25128205,25.9787928 9.25128205,21.2969005 C9.25128205,16.4437194 5.52820513,13.1892333 0,12.903752 C0,5.76672104 4.00512821,0 10.8871795,0 C17.6,0 22,5.42414356 22,13.2463295 C22,24.8939641 12.5794872,32.7161501 2.2,35 Z M33.2,35 L31.6769231,30.5464927 C36.5282051,29.233279 40.2512821,25.9787928 40.2512821,21.2969005 C40.2512821,16.4437194 36.5282051,13.1892333 31,12.903752 C31,5.76672104 35.0051282,0 41.8871795,0 C48.6,0 53,5.42414356 53,13.2463295 C53,24.8939641 43.5794872,32.7161501 33.2,35 Z' id=',,' transform='translate(26.500000, 17.500000) rotate(-180.000000) translate(-26.500000, -17.500000) '%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+			background-repeat: no-repeat
+	&__sb
+		position: relative
+		z-index: 1
+		width: 100%
+		height: 100%
+		align-self: flex-end
+		display: flex
+	&__title
+		margin-bottom: 22px
+	&__classes
+		max-width: 422px
+		padding: 45px 62px 72px
+		+css-lock(26,45,767,1440,padding-top)
+		+css-lock(35,62,767,1440,padding-bottom)
+		+css-lock(35,62,767,1440,border-left)
+		+css-lock(88,72,767,1440,padding-right)
+		background: #303D57
+		box-shadow: 60px 82px 124px 0 rgba(0,0,0,0.46)
+		vertical-align: top
+		display: inline-block
+		align-self: flex-end
+		&_black
+			background-color: #1A1919
+		.main-section_children &
+			+css-lock(0,146,1024,1440,margin-left)
+		.main-section_adult &
+			+css-lock(0,50,1024,1440,margin-left)
+	&__list
+		+ftb
+		color: #fff
+		letter-spacing: 0
+		line-height: 1.35
+		li
+			position: relative
+			padding-left: 25px
+			display: block
+			&:before
+				position: absolute
+				content: ''
+				+css-lock(5,12,767,1800,top)
+				left: 0
+				width: 5px
+				height: 5px
+				border-radius: 50%
+				background-color: #fff
+			&:not(:last-child)
+				margin-bottom: 20px
+		a
+			color: currentColor
+			transition: opacity .3s
+			text-transform: lowercase
+			+hover
+				opacity: .7
+	&__third-bottom
+		position: relative
+		z-index: 1
+		width: 100%
+		max-width: 1318px
+		justify-content: space-between
+		display: flex
+		align-self: flex-end

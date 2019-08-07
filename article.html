@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Index page</title>
+    <title>Article</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -13,9 +13,9 @@
 
   <body>
     <!-- BEGIN content -->
-    <div class="out out_main">
+    <div class="out">
       <!-- begin header -->
-      <header class="header header_main js-header">
+      <header class="header js-header">
         <div class="header__inner inner-lg">
           <button class="btn-menu js-btn-menu" type="button">
             <span class="btn-menu__line"></span>
@@ -43,58 +43,102 @@
         </div>
       </header>
       <!-- end header -->
-      <div class="fullpage js-fullpage fp-auto-height-responsive" style="overflow: hidden;">
-        <section class="main-section main-section_first js-section js-lazy" data-anchor="main" data-src="./img/first-screen-bg-@1-5x.jpg">
-          <div class="main-section__wrap inner-lg">
-            <div class="main-section__img"><img data-src="./img/main-slider/1.png" alt="img" class="js-lazy"></div>
-            <div class="main-section__middle">
-              <h1 class="main-section__title-lg title-main">Русская национальная балетная школа</h1>
-              <div class="main-section__text flex-end">Thought experiments (Gedankenexperimenten) are “facts” in the sense that they have a “real life” correlate in the form of electrochemical activity in the brain. But it is quite obvious that they do not relate to facts “out there”.</div>
+      <!-- begin hero -->
+      <div class="hero js-lazy" data-src="./img/hero-img.jpg"></div>
+      <!-- end hero -->
+      <div class="inner">
+        <div class="wrap">
+          <!-- begin section -->
+          <div class="section">
+            <div class="section__hero">
+              <img class="js-lazy" data-src="http://placeimg.com/2324/1070/any" alt="img">
             </div>
-          </div>
-        </section>
-        <section class="main-section main-section_children js-section" data-anchor="activities-for-children">
-          <div class="main-section__wrap inner-lg">
-            <div class="main-section__img"><img data-src="./img/main-slider/2.png" alt="img" class="js-lazy"></div>
-            <div class="main-section__sb">
-              <div class="main-section__classes">
-                <h3 class="main-section__title title-main-md">Занятия:</h3>
-                <ul class="main-section__list">
-                  <li><a href="#">БАЛЕТ ДЛЯ ДЕТЕЙ</a></li>
-                  <li><a href="#">ПРОФИЛАКТИКА ПЛОСКОСТОПИЯ</a></li>
-                  <li><a href="#">МУЗЫКАЛЬНАЯ РИТМИКА</a></li>
-                  <li><a href="#">БАЛЕТНАЯ ГИМНАСТИКА</a></li>
-                  <li><a href="#">АНГЛИЙСКИЙ В ИГРОВОЙ ФОРМЕ</a></li>
-                  <li><a href="#">ШКОЛА РАННЕГО РАЗВИТИЯ</a></li>
-                  <li><a href="#">ИСПРВЛЕНИЕ ОСАНКИ</a></li>
-                </ul>
+            <div class="section__head head text-center">
+              <h2 class="head__title title text-uppercase">СТАТЬЯ</h2>
+              <div class="head__date date">06.08.2022</div>
+            </div>
+            <div class="section__text">
+              <p>Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices of what to do in a live tournament games, here is the best place to learn them.</p>
+              <p>1) Try not to get drunk</p>
+              <p>Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games and at the very end of the day they don’t have power to continue till the last game, which is a pity to loose such a big opportunity, so, don’t drink a lot and be prepare for the last round, also come up with all your senses in order. If you drink, do it measurable and just to loose the nerves before the games but also have some other drinks like soda, water, coffee and others to hydrate your self. 2) Is it important where I sit? Yes it is, in a tournament try not to sit next to the dealer, take a place in where you will feel that you are in front of the dealer to have the feeling that he is giving you a game. Also in a place where you will feel comfortable with your self and you will have a perspective of the other players.</p>
+              <p>3) Make your self comfortable while playing</p>
+              <p>Don’t show the other players with your position what you cards are telling you. Make sure to seat back and relax, don’t adopt positions that will make you move too much or feel uncomfortable during the time of the game. Some players in the tournaments show their game with the position they adopt while playing either putting the elbows on the table or resting in the bumper. 4) Do the most important thing in the brake.</p>
+              <p>Don’t get distracted from what you really need to do in the brake. Take your time to go to the bathroom and rest, sometimes the discussions about the previous game or lines for getting drinks will waste your time for what is really important.</p>
+              <p>5) Also your words and mimic are important during the game.</p>
+              <p>When ever you are playing don’t show your cards to the other player in the way you talk or look, is important that they will have other impression, for example in your hand Is good you can try on making faces or saying words that show that your hand is not good, then people will think you have a bad game and you will surprise them at the end. This doesn’t work all the time so try to find different ways to hide your game.Also you can read the other player’s movements and words to see either they are lying or telling the truth in the hand.</p>
+            </div>
+            <div class="section__bottom">
+              <!-- begin pagination -->
+              <div class="pagination pagination_space-between">
+                <a href="#" class="pagination__prev">
+                  <svg class="icon icon-next">
+                    <use xlink:href="img/sprite.svg#icon-next"></use>
+                  </svg>
+                  <span class="pagination__prev-text">Предидущая статья</span></a>
+                <a href="#" class="pagination__next"><span class="pagination__next-text">Следующая статья</span>
+                  <svg class="icon icon-next">
+                    <use xlink:href="img/sprite.svg#icon-next"></use>
+                  </svg>
+                </a>
               </div>
-              <h2 class="main-section__title-lg title-main flex-end">Занятия для детей</h2>
+              <!-- end pagination -->
+            </div>
+            <div class="section__soc">
+              <h3 class="section__soc-title">Поделиться статьей</h3>
+              <ul class="soc soc_sm">
+                <li><a href="#" target="_blank"><img src="./img/vk.png" alt="vk"></a></li>
+                <li><a href="#" target="_blank"><img src="./img/facebook.png" alt="facebook"></a></li>
+                <li><a href="#" target="_blank"><img src="./img/instagram.png" alt="instagram"></a></li>
+              </ul>
+            </div>
+            <div class="section__subscribe">
+              <form class="subscribe">
+                <div class="subscribe__text">Подписаться на статьи</div>
+                <div class="subscribe__control">
+                  <label for="subscribe-input" class="subscribe__label">email:</label>
+                  <div class="subscribe__input">
+                    <input type="text" id="subscribe-input" name="subscribe-input" placeholder="example@mail.ru">
+                  </div>
+                </div>
+                <div class="subscribe__button">
+                  <a href="#" class="btn">Подписаться</a>
+                </div>
+              </form>
             </div>
           </div>
-        </section>
-        <section class="main-section main-section_adult js-section" data-anchor="adult-activities">
-          <div class="main-section__wrap inner-lg">
-            <div class="main-section__img"><img data-src="./img/main-slider/3.png" alt="img" class="js-lazy"></div>
-            <div class="main-section__third-bottom">
-              <div class="main-section__classes main-section__classes_black">
-                <h3 class="main-section__title title-main-md">Занятия:</h3>
-                <ul class="main-section__list">
-                  <li><a href="#">БАЛЕТ ДЛЯ ВЗРОСЛЫХ</a></li>
-                  <li><a href="#">ПИЛАТЕС</a></li>
-                  <li><a href="#">ПОСТУРАЛЬНАЯ ГИМНАСТИКА</a></li>
-                  <li><a href="#">ИЛЗЕ ЛИЕПА МЕТОД</a></li>
-                  <li><a href="#">СОВЕРЕМЕННЫЙ ТАНЕЦ</a></li>
-                  <li><a href="#">ВОССТАНОВЛЕНИЕ</a></li>
-                  <li><a href="#">СПОРТСМЕНОВ</a></li>
-                </ul>
-                <a href="tel:+7(495)204-22-77" class="btn">Позвонить</a>
-              </div>
-              <h2 class="main-section__title-lg title-main">Занятия для взрослых</h2>
-            </div>
-          </div>
-        </section>
+          <!-- end section -->
+        </div>
       </div>
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <a href="#" class="footer__logo logo-text">
+            <span class="logo-text__img">
+              <img src="./img/logo-white.svg" alt="logo">
+            </span>
+            <span class="logo-text__text">Русская национальная школа балета</span>
+          </a>
+          <div class="footer__row">
+            <div class="footer__col">Спецпроекты</div>
+            <div class="footer__col">Статьи</div>
+          </div>
+          <ul class="footer__soc soc">
+            <li><a href="#" target="_blank"><img src="./img/vk.png" alt="vk"></a></li>
+            <li><a href="#" target="_blank"><img src="./img/facebook.png" alt="facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="./img/instagram.png" alt="instagram"></a></li>
+          </ul>
+          <div class="footer__row">
+            <div class="footer__col">
+              <a href="tel:+7(495)000-00-00">+7 (495) 000-00-00</a>
+            </div>
+            <div class="footer__col">
+              <a href="mailto:mail@ilzeliepa-school.ru">mail@ilzeliepa-school.ru</a>
+            </div>
+          </div>
+          <div class="footer__copy">&copy; Ballet school | ПОЛИТИКА КОНФИНДЕЦИАЛЬНОСТИ</div>
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

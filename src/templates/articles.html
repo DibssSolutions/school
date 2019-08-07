@@ -1,0 +1,84 @@
+---
+title: Articles
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	<!-- begin hero -->
+	<div class="hero js-lazy" data-src="./img/hero-img.jpg"></div>
+	<!-- end hero -->
+	<div class="inner">
+		<div class="wrap">
+			<!-- begin section -->
+			<div class="section">
+				<div class="section__hero">
+					<img class="js-lazy" data-src="http://placeimg.com/2324/1070/any" alt="img">
+				</div>
+				<div class="section__head head text-center">
+					<h2 class="head__title title text-uppercase">ЗАГОЛОВОК ГЛАВНОЙ СТАТЬИ</h2>
+					<div class="head__date date">06.08.2022</div>
+				</div>
+				<div class="section__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus</p>
+				</div>
+				<div class="section__footer text-center">
+					<a href="#" class="btn">Подробнее</a>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<div class="news-item">
+					<div class="news-item__img"><img class="js-lazy" data-src="http://placeimg.com/640/728/any" alt="img"></div>
+					<div class="news-item__wrap">
+						<div class="news-item__head">
+							<h3 class="news-item__title title">Другая статья</h3>
+							<div class="news-item__date date">06.08.2022</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						<div class="news-item__footer">
+							<a href="#" class="btn">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<div class="news-item">
+					<div class="news-item__img"><img class="js-lazy" data-src="http://placeimg.com/640/728/any" alt="img"></div>
+					<div class="news-item__wrap">
+						<div class="news-item__head">
+							<h3 class="news-item__title title">Другая статья</h3>
+							<div class="news-item__date date">06.08.2022</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						<div class="news-item__footer">
+							<a href="#" class="btn">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin pagination -->
+			<div class="pagination">
+				<a href="#" class="pagination__prev">{{ mixins.icon('next') }}</a>
+				<ul class="pagination__list">
+					<li><a href="#">1</a></li>
+					<li class="is-active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><span>...</span></li>
+					<li><a href="#">28</a></li>
+					<li><a href="#">29</a></li>
+					<li><a href="#">30</a></li>
+				</ul>
+				<a href="#" class="pagination__next">{{ mixins.icon('next') }}</a>
+			</div>
+			<!-- end pagination -->
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

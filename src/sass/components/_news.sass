@@ -1,0 +1,50 @@
+.news-item
+	display: flex
+	font-size: 15px
+	background-color: #F7F7F9
+	+sm
+		flex-direction: column
+		font-size: 14px
+	&__img
+		flex-shrink: 0
+		width: 320px
+		+md
+			width: 250px
+		+sm
+			width: 100%
+			height: 360px
+			margin: 0 auto
+		img
+			display: block
+			object-fit: cover
+			object-position: center
+			width: 100%
+			height: 100%
+	&__wrap
+		padding: 40px 55px 38px 40px
+		+md
+			padding: 40px 35px
+		+sm
+			padding: 30px 15px
+		p
+			&:not(:last-child)
+				margin-bottom: 15px
+	&__title
+		margin-bottom: 8px
+		font-weight: 700
+		text-align: left
+		.news-item__head &
+			margin-right: 15px
+	&__head
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		display: flex
+	&__title
+		margin-bottom: 20px
+	&__date
+		margin-bottom: 20px
+	&__footer
+		margin-top: 30px
+		+sm
+			margin-top: 15px

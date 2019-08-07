@@ -1,0 +1,88 @@
+---
+title: Teacher
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	<!-- begin hero -->
+	<div class="hero js-lazy" data-src="./img/hero-img.jpg"></div>
+	<!-- end hero -->
+	<div class="inner">
+		<div class="wrap">
+			<!-- begin section -->
+			<div class="section">
+				<div class="section__teacher">
+					<img class="js-lazy" data-src="https://i.pravatar.cc/300" alt="img">
+				</div>
+				<h2 class="section__title title text-uppercase">Иванова Ольга</h2>
+				<div class="section__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus</p>
+				</div>
+				<div class="teachers row">
+					{% for i in range(0,3) %}
+					    <div class="teachers__col col col-4 col-md-6 col-sm-12">
+					    	<!-- begin item -->
+					    	<a href="#" class="item">
+					    		<div class="item__achievement">
+					    			<img class="js-lazy" data-src="./img/achievement.svg" alt="img">
+					    		</div>
+					    		<div class="item__name">Chad Howell</div>
+					    		<div class="item__text">How Does An Lcd Screen Work</div>
+					    	</a>
+					    	<!-- end item -->
+					    </div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h2 class="section__title title">Ведет уроки по следующий направлениям:</h2>
+				<div class="section__lessons lessons">
+					<div class="lessons__col">
+						<div class="lessons__wrap">
+							<h4 class="lessons__title">Для взрослых</h4>
+							<ul class="lessons__list">
+								{% for text in ['БАЛЕТ ДЛЯ ДЕТЕЙ', 'ПРОФИЛАКТИКА ПЛОСКОСТОПИЯ', 'МУЗЫКАЛЬНАЯ РИТМИКА', 'БАЛЕТНАЯ ГИМНАСТИКА', 'АНГЛИЙСКИЙ В ИГРОВОЙ ФОРМЕ', 'ШКОЛА РАННЕГО РАЗВИТИЯ', 'ИСПРВЛЕНИЕ ОСАНКИ'] %}
+								    <li><a href="#">{{ text }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					<div class="lessons__col">
+						<div class="lessons__wrap lessons__wrap_blue">
+							<h4 class="lessons__title">Для детей</h4>
+							<ul class="lessons__list">
+								{% for text in ['БАЛЕТ ДЛЯ ВЗРОСЛЫХ', 'ПИЛАТЕС', 'ПОСТУРАЛЬНАЯ ГИМНАСТИКА', 'ИЛЗЕ ЛИЕПА МЕТОД', 'СОВЕРЕМЕННЫЙ ТАНЕЦ', 'ВОССТАНОВЛЕНИЕ', 'СПОРТСМЕНОВ'] %}
+								    <li><a href="#">{{ text }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Индивидуальные занятия</h3>
+				<div class="individually">
+					<div class="individually__img">
+						<img  class="js-lazy" data-src="./img/img-individually.jpg" alt="img">
+					</div>
+					<div class="individually__wrap">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						<div class="individually__footer">
+							<button class="btn" data-modal-control="signup">Записаться</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+	{% include "partials/_modal.html" %}
+
+{% endblock %}

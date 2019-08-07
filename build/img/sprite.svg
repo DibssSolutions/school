@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+        <path d="M8.619 15.872l4.754 4.251a1 1 0 1 1-1.333 1.491l-6.695-5.986A1.009 1.009 0 0 1 5 14.863a.992.992 0 0 1 .353-.753l6.694-5.862a1 1 0 1 1 1.318 1.504l-4.705 4.12h15.309a1 1 0 1 1 0 2H8.619z" id="a"/>
+    </defs><symbol id="icon-close" viewBox="0 0 12 12">
+    <title>
+        Combined Shape
+    </title>
+    <path d="M5.885 5.15L10.388.645a.5.5 0 0 1 .707.708L6.592 5.856l4.503 4.503a.5.5 0 0 1-.707.707L5.885 6.563l-4.531 4.532a.5.5 0 0 1-.708-.707l4.532-4.532L.675 1.354a.5.5 0 1 1 .707-.708L5.885 5.15z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-next" viewBox="0 0 20 14">
+    <title>
+        icons/Navbar/Back Copy
+    </title>
+    
+    <use xlink:href="#a" transform="matrix(-1 0 0 1 25 -8)" fill-rule="evenodd"/>
 </symbol></svg>

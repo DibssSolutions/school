@@ -1,0 +1,70 @@
+---
+title: Article
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	<!-- begin hero -->
+	<div class="hero js-lazy" data-src="./img/hero-img.jpg"></div>
+	<!-- end hero -->
+	<div class="inner">
+		<div class="wrap">
+			<!-- begin section -->
+			<div class="section">
+				<div class="section__hero">
+					<img class="js-lazy" data-src="http://placeimg.com/2324/1070/any" alt="img">
+				</div>
+				<div class="section__head head text-center">
+					<h2 class="head__title title text-uppercase">СТАТЬЯ</h2>
+					<div class="head__date date">06.08.2022</div>
+				</div>
+				<div class="section__text">
+					<p>Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices of what to do in a live tournament games, here is the best place to learn them.</p>
+					<p>1) Try not to get drunk</p>
+					<p>Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games and at the very end of the day they don’t have power to continue till the last game, which is a pity to loose such a big opportunity, so, don’t drink a lot and be prepare for the last round, also come up with all your senses in order. If you drink, do it measurable and just to loose the nerves before the games but also have some other drinks like soda, water, coffee and others to hydrate your self. 2) Is it important where I sit? Yes it is, in a tournament try not to sit next to the dealer, take a place in where you will feel that you are in front of the dealer to have the feeling that he is giving you a game. Also in a place where you will feel comfortable with your self and you will have a perspective of the other players.</p>
+					<p>3) Make your self comfortable while playing</p>
+					<p>Don’t show the other players with your position what you cards are telling you. Make sure to seat back and relax, don’t adopt positions that will make you move too much or feel uncomfortable during the time of the game. Some players in the tournaments show their game with the position they adopt while playing either putting the elbows on the table or resting in the bumper. 4) Do the most important thing in the brake.</p>
+					<p>Don’t get distracted from what you really need to do in the brake. Take your time to go to the bathroom and rest, sometimes the discussions about the previous game or lines for getting drinks will waste your time for what is really important.</p>
+					<p>5) Also your words and mimic are important during the game.</p>
+					<p>When ever you are playing don’t show your cards to the other player in the way you talk or look, is important that they will have other impression, for example in your hand Is good you can try on making faces or saying words that show that your hand is not good, then people will think you have a bad game and you will surprise them at the end. This doesn’t work all the time so try to find different ways to hide your game.Also you can read the other player’s movements and words to see either they are lying or telling the truth in the hand.</p>
+				</div>
+				<div class="section__bottom">
+					<!-- begin pagination -->
+					<div class="pagination pagination_space-between">
+						<a href="#" class="pagination__prev">{{ mixins.icon('next') }}<span class="pagination__prev-text">Предидущая статья</span></a>
+						<a href="#" class="pagination__next"><span class="pagination__next-text">Следующая статья</span>{{ mixins.icon('next') }}</a>
+					</div>
+					<!-- end pagination -->
+				</div>
+				<div class="section__soc">
+					<h3 class="section__soc-title">Поделиться статьей</h3>
+					<ul class="soc soc_sm">
+						<li><a href="#" target="_blank"><img src="./img/vk.png" alt="vk"></a></li>
+						<li><a href="#" target="_blank"><img src="./img/facebook.png" alt="facebook"></a></li>
+						<li><a href="#" target="_blank"><img src="./img/instagram.png" alt="instagram"></a></li>
+					</ul>
+				</div>
+				<div class="section__subscribe">
+					<form class="subscribe">
+						<div class="subscribe__text">Подписаться на статьи</div>
+						<div class="subscribe__control">
+							<label for="subscribe-input" class="subscribe__label">email:</label>
+							<div class="subscribe__input">
+								<input type="text" id="subscribe-input" name="subscribe-input" placeholder="example@mail.ru">
+							</div>
+						</div>
+						<div class="subscribe__button">
+							<a href="#" class="btn">Подписаться</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- end section -->
+			
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

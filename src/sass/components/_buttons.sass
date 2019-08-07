@@ -1,0 +1,25 @@
+.btn
+	padding: 17px 30px 15px
+	font-family: 'Roboto', sans-serif
+	+f(15px,700,1.2)
+	min-width: 243px
+	border-radius: 28px
+	text-align: center
+	color: #fff
+	background-color: #6E7FFC
+	transition: background-color .3s, color .3s
+	display: inline-block
+	+sm
+		min-width: 100%
+	+hover
+		background-color: darken(#6E7FFC, 10%)
+	&_white
+		color: #2C253B
+		background-color: #fff
+		+hover
+			color: #fff
+			background-color: #6E7FFC
+	&_full
+		width: 100%
+	&_bdsm
+		border-radius: 5px

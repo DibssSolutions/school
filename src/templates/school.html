@@ -1,0 +1,138 @@
+---
+title: School
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	<!-- begin hero -->
+	<div class="hero js-lazy" data-src="./img/school-hero.jpg"></div>
+	<!-- end hero -->
+	<div class="inner">
+		<div class="wrap">
+			<!-- begin section -->
+			<div class="section">
+				<h2 class="section__title title text-uppercase">ШКОЛА-СТУДИЯ ЖУКОВКА</h2>
+				<div class="section__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus</p>
+				</div>
+				<div class="section__lessons lessons">
+					<div class="lessons__col">
+						<div class="lessons__wrap">
+							<h4 class="lessons__title">Для взрослых</h4>
+							<ul class="lessons__list">
+								{% for text in ['БАЛЕТ ДЛЯ ДЕТЕЙ', 'ПРОФИЛАКТИКА ПЛОСКОСТОПИЯ', 'МУЗЫКАЛЬНАЯ РИТМИКА', 'БАЛЕТНАЯ ГИМНАСТИКА', 'АНГЛИЙСКИЙ В ИГРОВОЙ ФОРМЕ', 'ШКОЛА РАННЕГО РАЗВИТИЯ', 'ИСПРВЛЕНИЕ ОСАНКИ'] %}
+								    <li><a href="#">{{ text }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					<div class="lessons__col">
+						<div class="lessons__wrap lessons__wrap_blue">
+							<h4 class="lessons__title">Для детей</h4>
+							<ul class="lessons__list">
+								{% for text in ['БАЛЕТ ДЛЯ ВЗРОСЛЫХ', 'ПИЛАТЕС', 'ПОСТУРАЛЬНАЯ ГИМНАСТИКА', 'ИЛЗЕ ЛИЕПА МЕТОД', 'СОВЕРЕМЕННЫЙ ТАНЕЦ', 'ВОССТАНОВЛЕНИЕ', 'СПОРТСМЕНОВ'] %}
+								    <li><a href="#">{{ text }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Адрес и контакты</h3>
+				<div class="section__contacts">
+					<p>Москва, ул. Солянка, д. 1 м. Китай-город</p>
+					<p> Время работы: </p>
+					<p>Пн – Пт, 09:00 – 21:00 Сб – Вс, 09:00 – 20:00 </p>
+					<p>Контакты:</p>
+					<p>+7 (495) 204-22-77 +7 (495) 623-02-05 </p>
+					<p>Solyanka@ilzeliepa-school.r</p>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin checkin -->
+			<div class="checkin">
+				<div class="checkin__img">
+					<img src="./img/subscribe-img.png" alt="img">
+				</div>
+				<div class="checkin__wrap">
+					<div class="checkin__title title">Запишитесь и приходите на первое занятие бесплатно</div>
+					<div class="checkin__button">
+						<a href="#" data-modal-control="signup" class="btn btn_white">Записаться</a>
+					</div>
+				</div>
+			</div>
+			<!-- end checkin -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Галерея</h3>
+				<div class="slider js-slider" data-slide-show="2" data-slide-show-md="2" data-slide-show-sm="1">
+					{% for i in range(0,5) %}
+					<a href="http://placeimg.com/1500/600/any" class="slider__slide" data-fancybox="gallery">
+						<img data-lazy="http://placeimg.com/990/600/any" alt="img" >
+					</a>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Преподаватели</h3>
+				<div class="slider slider_teacher js-slider" data-slide-show="5">
+					{% for i in range(0,12) %}
+					<div class="slider__slide">
+						<!-- begin item -->
+						<a href="#" class="item">
+							<div class="item__img">
+								<img class="js-lazy" data-src="https://i.pravatar.cc/200" alt="img">
+							</div>
+							<div class="item__name">Chad Howell</div>
+							<div class="item__text">How Does An Lcd Screen Work</div>
+						</a>
+						<!-- end item -->
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Отзывы</h3>
+				<div class="slider slider_review js-slider" data-slide-show="1" data-slide-show-md="1" data-slide-show-sm="1">
+					{% for i in range(0,2) %}
+					<div class="slider__slide">
+						<!-- begin review -->
+						<div class="review">
+							<div class="review__topic"> <!-- or add link -->
+								<div class="review__img">
+									<img data-lazy="https://i.pravatar.cc/200" alt="img">
+								</div>
+								<div class="review__name">Polly Allison</div>
+							</div>
+							<div class="review__text">One of the popular questions is – why my logo should be custom? If logo is created with the use of a clipart (premade graphic elements from the public collections) it may look like or be identical to other logos and even your competitors’ logos. This will make identification of your company difficult or your logo may be easily mixed up with logo of another company. This situation may harm your reputation and money invested in marketing of your brand will be wasted. Good company logo reflects the main point of your company, its values and helps in successful development of the business. Also, it is important to distinguish the logo design for big companies and start-ups. Logo for the big company may consist only of a one graphic element (Nike swoosh) and it will be easily identifiable but for small company such logo is a bad idea because you will need to spent huge amounts of money to promote it.</div>
+						</div>
+						<!-- end review -->
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Как добраться</h3>
+				<div class="section__map map js-map"><img src="./img/map.jpg" alt="map"></div>
+				<div class="section__text">
+					<p>One of the popular questions is – why my logo should be custom? If logo is created with the use of a clipart (premade graphic elements from the public collections) it may look like or be identical to other logos and even your competitors’ logos. This will make identification of your company difficult or your logo may be easily mixed up with logo of another company. This situation may harm your reputation and money invested in marketing of your brand will be wasted. Good company logo reflects the main point of your company, its values and helps in successful development of the business. Also, it is important to distinguish the logo design for big companies and start-ups. Logo for the big company may consist only of a one graphic element (Nike swoosh) and it will be easily identifiable but for small company such logo is a bad idea because you will need to spent huge amounts of money to promote it.</p>
+				</div>
+			</div>
+			<!-- end section -->
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+	{% include "partials/_modal.html" %}
+
+{% endblock %}

@@ -1,0 +1,36 @@
+.schedule-wrap
+	overflow-x: auto
+.schedule
+	min-width: 900px
+	overflow-x: auto
+	font-weight: 700
+	font-size: 0
+	text-align: center
+	border-right: 2px solid #E5E5E5
+	border-top: 2px solid #E5E5E5
+	table-layout: fixed
+	th,
+	td
+		padding: 10px 8px
+		width: 12.5%
+		min-width: 90px
+		height: 61px
+		line-height: 40px
+		font-size: 12px
+		border-bottom: 2px solid #E5E5E5
+		border-left: 2px solid #E5E5E5
+		vertical-align: top
+		display: inline-block
+	&__info
+		line-height: 1.16
+		max-width: 100%
+		vertical-align: middle
+		display: inline-block
+		& > p, 
+		& > div
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+	&__services
+		margin-bottom: 5px
+		color: #BFC1D1

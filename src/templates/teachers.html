@@ -1,0 +1,41 @@
+---
+title: Teachers
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	<!-- begin hero -->
+	<div class="hero js-lazy" data-src="./img/teachers-img.jpg"></div>
+	<!-- end hero -->
+	<div class="inner">
+		<div class="wrap">
+			<!-- begin section -->
+			<div class="section">
+				<h2 class="section__title title text-uppercase">ПРЕПОДАВАТЕЛИ</h2>
+				<div class="section__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus</p>
+				</div>
+				<div class="teachers row">
+					{% for i in range(0,5) %}
+					    <div class="teachers__col col col-4 col-md-6 col-sm-12">
+					    	<!-- begin item -->
+					    	<a href="#" class="item">
+					    		<div class="item__img item__img_lg">
+					    			<img class="js-lazy" data-src="https://i.pravatar.cc/300" alt="img">
+					    		</div>
+					    		<div class="item__name">Chad Howell</div>
+					    		<div class="item__text">How Does An Lcd Screen Work</div>
+					    	</a>
+					    	<!-- end item -->
+					    </div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

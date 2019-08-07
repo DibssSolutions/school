@@ -2,4 +2,28 @@ ProjectTitle: template
 
 PageList:
 - file: page.html
-  ready: 50
+  ready: 100
+- file: school.html
+  ready: 100
+- file: classes.html
+  ready: 100
+- file: teachers.html
+  ready: 100
+- file: teacher.html
+  ready: 100
+- file: about.html
+  ready: 100
+- file: news.html
+  ready: 100
+- file: news-page.html
+  ready: 100
+- file: contacts.html
+  ready: 100
+- file: shop.html
+  ready: 100
+- file: articles.html
+  ready: 100
+- file: article.html
+  ready: 100
+- file: special-projects.html
+  ready: 100

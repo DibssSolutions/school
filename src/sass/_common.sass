@@ -1,26 +1,57 @@
+.is-overflow-hidden
+	overflow: scroll
+
 body
+	min-width: 320px
+	width: 100%
 	font-family: 'Roboto', sans-serif
 	+f(15px,500,1.73)
 	color: #5B5E77
 	+font-smoothing
-	background-color: #fff
+	background-color: #F7F7F9
 	+fadeout(.3s)
+	+sm
+		font-size: 14px
 	&.is-loaded
 		+fadein
+	.is-open-menu &
+		width: 100%
 
 
 .title-main
 	+fny
-	+css-lock(30,100,1023,1440)
+	+css-lock(60,100,1023,1440)
 	letter-spacing: -0.01em
 	line-height: 0.83
+	+sm
+		font-size: 29.3px
+		text-align: center
+		line-height: 1.1
 
-.title
+
+.title-main-md
 	+fny
 	color: #FFFFFF
 	letter-spacing: -0.36px
 	line-height: 1.4
 	+css-lock(23,40,1023,1440)
+
+.title
+	font-family: 'Roboto', sans-serif
+	+f(30px,700,1.17)
+	letter-spacing: 0
+	text-align: center
+	+sm
+		font-size: 26px
+
+.text-uppercase
+	text-transform: uppercase
+
+.text-center
+	text-align: center
+
+.text-left
+	text-align: left
 
 .flex-end
 	align-self: flex-end

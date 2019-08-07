@@ -1,6 +1,8 @@
 import { BODY, LOADED } from '../constants';
 import './_lazyload.js';
 import './_fp.js';
-setTimeout(() => {
-  BODY.addClass(LOADED);
-}, 500);
+import './_fancy.js';
+import './_menu.js';
+import './_slider.js';
+import './_modal.js';
+BODY.addClass(LOADED);

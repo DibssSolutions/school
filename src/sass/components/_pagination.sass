@@ -1,0 +1,62 @@
+.pagination
+	padding-top: 37px
+	border-top: 1px solid #D6D6D6
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+	display: flex
+	color: #5B5E77
+	+sm
+		padding-top: 20px
+	a
+		color: currentColor
+	&_space-between
+		justify-content: space-between
+	&__prev,
+	&__next
+		height: 30px
+		line-height: 30px
+		text-align: center
+		font-family: 'PT Sans', sans-serif
+		transition: opacity .3s
+		+hover
+			opacity: .4
+		&-text
+			vertical-align: middle
+			font-family: 'Roboto', sans-serif
+			font-weight: 500
+			display: inline-block
+			+xs
+				display: none
+		.icon
+			vertical-align: middle
+			font-size: 13px
+			display: inline-block
+	&__prev
+		margin-right: 10px
+		&-text
+			margin-left: 15px
+		.icon
+			+rotate(180)
+	&__next
+		margin-left: 10px
+		&-text
+			margin-right: 15px
+	&__list
+		flex-wrap: wrap
+		justify-content: center
+		display: flex
+		li
+			&.is-active,
+			&.active
+				a
+					opacity: 1
+			&:not(:last-child)
+				margin-right: 10px
+		a
+			opacity: .4
+			transition: opacity .3s
+			+hover
+				opacity: 1
+		span
+			opacity: .4

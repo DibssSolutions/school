@@ -1,0 +1,47 @@
+<div class="modal" data-modal="signup">
+	<div class="modal__container" data-modal-container>
+		<div class="modal__inner">
+			<button class="modal__close" data-modal-close>
+			  {{mixins.icon('close')}}
+			</button>
+			<form action="/" class="form">
+				<div class="form__title-sm text-uppercase text-center">записаться <br>на индивидуальное занятие</div>
+				<div class="form-field">
+					<div class="form-control">
+						<input type="text" placeholder="Ваше имя">
+					</div>
+				</div>
+				<div class="form-field">
+					<div class="form-control">
+						<input type="text" placeholder="Email">
+					</div>
+				</div>
+				<div class="form-field">
+					<div class="form-control">
+						<input type="text" placeholder="Телефон">
+					</div>
+				</div>
+				<div class="form-check">
+					<label class="checkbox">
+						<input type="checkbox">
+						<span class="checkbox__title">согласие на обработку персональных данных</span>
+						<svg class="checkbox__check" width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						        <g transform="translate(-778.000000, -984.000000)" fill="#6E7FFC">
+						            <g transform="translate(674.000000, 632.000000)">
+						                <g transform="translate(100.000000, 352.000000)">
+						                    <path d="M10.0128883,15.4873178 L5.72243368,11.0045653 C5.34056092,10.605577 4.70754799,10.5917021 4.30855971,10.9735749 C3.90957144,11.3554477 3.89569657,11.9884606 4.27756933,12.3874489 L9.35406778,17.6914757 C9.77094779,18.1270402 10.4755902,18.0974091 10.854431,17.6283835 L23.7779326,1.62838349 C24.1249605,1.19874402 24.0579906,0.569130706 23.6283511,0.222102803 C23.1987116,-0.124925099 22.5690983,-0.0579551868 22.2220704,0.37168429 L10.0128883,15.4873178 Z" ></path>
+						                </g>
+						            </g>
+						        </g>
+						    </g>
+						</svg>
+					</label>
+				</div>
+				<div class="form-footer">
+					<button class="btn btn_full btn_bdsm" type="submit">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

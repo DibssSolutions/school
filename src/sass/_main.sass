@@ -1,3 +1,9 @@
+.fullpage
+	+sm
+		transform: translate(0,0) !important
+		transition: none !important
+		overflow: hidden !important
+
 .main-section
 	position: relative
 	height: 100vh
@@ -6,20 +12,59 @@
 	+ftb
 	overflow: hidden
 	background-size: cover
+	background-position: center
 	background-repeat: no-repeat
 	background-color: #303D57
+	+sm
+		height: 100%
+		min-height: 100vh
+		overflow: visible
+	&_first
+		position: relative
+		z-index: 3	
+		+sm
+			height: auto
+			min-height: 0	
 	&_children
 		background-image: linear-gradient(136deg, #8FCEEA 0%, #8FCEEA 100%)
+		+sm
+			background: #8FCEEA
 	&_adult
 		background-image: linear-gradient(-44deg, #A57951 0%, #FFBD81 100%)
+		+sm
+			position: relative
+			z-index: 2
+			background: #FEBC81
+			&:after
+				position: absolute
+				content: ''
+				top: -40px
+				left: -15px
+				right: -15px
+				bottom: 0
+				z-index: -1
+				transform: skewY(-6deg)
+				background-color: #FEBC81
 	&__wrap
 		position: relative
 		padding-top: 100px
-		margin-bottom: 100px
 		overflow: hidden
 		width: 100%
 		height: 100vh
 		display: flex
+		.main-section_first &
+			padding-bottom: 20px
+			+sm
+				margin-bottom: -30px
+				padding-bottom: 0
+				height: auto
+				min-height: 0
+		+sm
+			padding-top: 0
+			padding-bottom: 0
+			height: auto
+			min-height: 100vh
+			overflow: visible
 	&__img
 		position: absolute
 		bottom: 0
@@ -29,14 +74,38 @@
 			max-width: 1124px
 			transform: translateX(-42.5%)
 			max-height: 85.5%
+			+sm
+				top: 215px
+				bottom: auto
+				width: 477px
 		.main-section_children &
 			max-width: 1489px
 			transform: translate(-61.5%,8%)
 			max-height: 100%
+			+sm
+				top: 150px
+				bottom: auto
+				width: 555px
+				transform: translate(-51.5%,0)
+				&:after
+					position: absolute
+					content: ''
+					left: -15px
+					right: -15px
+					bottom: -25px
+					height: 50px
+					z-index: 1
+					transform: skewY(-6deg)
+					background-color: #8FCEEA
 		.main-section_adult &
 			max-width: 1327px
 			max-height: 100%
 			transform: translate(-50%,10.5%)
+			+sm
+				top: 95px
+				width: 490px
+				bottom: auto
+				transform: translate(-35%,0)
 		img
 			max-width: 100%
 			max-height: 100%
@@ -48,26 +117,60 @@
 		align-self: center
 		display: flex
 		flex-direction: column
-		+clr
+		+sm
+			padding-top: 70px
+			justify-content: space-between
 	&__title-lg
 		margin-bottom: 62px
+		+sm
+			margin: 0 auto 130px
 		.main-section_first &
-			+css-lock(248,781,767,1440,max-width)
+			+css-lock(248,781,768,1440,max-width)
+			+sm
+				margin-bottom: 320px
+				max-width: 243px
 		.main-section_children &
-			+css-lock(0,110,767,1440,margin-top)
+			+css-lock(0,110,768,1440,margin-top)
 			margin-left: auto
-			+css-lock(248,428,767,1440,max-width)
+			+css-lock(248,428,768,1440,max-width)
 			align-self: flex-start
+			+sm
+				margin-bottom: 230px
+				order: -1
 		.main-section_adult &
-			+css-lock(10,90,767,1440,margin-bottom)
-			+css-lock(248,495,767,1440,max-width)
+			+css-lock(40,90,768,1440,margin-bottom)
+			+css-lock(300,495,768,1440,max-width)
 			align-self: flex-end
+			+sm
+				margin-bottom: 324px
+				order: -1
 	&__text
 		position: relative
+		z-index: 1
 		padding-left: 70px
 		line-height: 2.2
+		letter-spacing: 0.02em
 		align-self: flex-end
-		+css-lock(325,554,767,1440,max-width)
+		+css-lock(325,554,768,1440,max-width)
+		+sm
+			padding: 40px 0 40px 42px
+			margin: 0 auto
+			max-width: 400px
+			width: 100%
+			min-height: 240px
+			letter-spacing: 0.028em
+			align-self: flex-start
+			+css-lock(60,90,320,766,padding-top)
+			&:after
+				position: absolute
+				content: ''
+				top: 0
+				left: 50%
+				width: 100vw
+				bottom: 0
+				z-index: -1
+				transform: skewY(-6deg) translateX(-50%)
+				background-color: #2A324C
 		&:before
 			position: absolute
 			content: ''
@@ -77,6 +180,11 @@
 			height: 53px
 			background-image: url("data:image/svg+xml,%0A%3Csvg width='53px' height='35px' viewBox='0 0 53 35' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='home' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Home' transform='translate(-1243.000000, -642.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-3' transform='translate(1243.000000, 642.000000)'%3E%3Cpath d='M2.2,35 L0.676923077,30.5464927 C5.52820513,29.233279 9.25128205,25.9787928 9.25128205,21.2969005 C9.25128205,16.4437194 5.52820513,13.1892333 0,12.903752 C0,5.76672104 4.00512821,0 10.8871795,0 C17.6,0 22,5.42414356 22,13.2463295 C22,24.8939641 12.5794872,32.7161501 2.2,35 Z M33.2,35 L31.6769231,30.5464927 C36.5282051,29.233279 40.2512821,25.9787928 40.2512821,21.2969005 C40.2512821,16.4437194 36.5282051,13.1892333 31,12.903752 C31,5.76672104 35.0051282,0 41.8871795,0 C48.6,0 53,5.42414356 53,13.2463295 C53,24.8939641 43.5794872,32.7161501 33.2,35 Z' id=',,' transform='translate(26.500000, 17.500000) rotate(-180.000000) translate(-26.500000, -17.500000) '%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
 			background-repeat: no-repeat
+			background-size: contain
+			+sm
+				+css-lock(60,90,320,766,top)
+				width: 31px
+				height: 21px
 	&__sb
 		position: relative
 		z-index: 1
@@ -84,26 +192,52 @@
 		height: 100%
 		align-self: flex-end
 		display: flex
+		+sm
+			padding-top: 90px
+			justify-content: space-between
+			min-height: 100vh
+			flex-direction: column
 	&__title
 		margin-bottom: 22px
+		+sm
+			margin-bottom: 18px
 	&__classes
+		position: relative
 		max-width: 422px
 		padding: 45px 62px 72px
-		+css-lock(26,45,767,1440,padding-top)
-		+css-lock(35,62,767,1440,padding-bottom)
-		+css-lock(35,62,767,1440,border-left)
-		+css-lock(88,72,767,1440,padding-right)
+		+css-lock(26,45,768,1440,padding-top)
+		+css-lock(35,62,768,1440,padding-bottom)
+		+css-lock(35,62,768,1440,padding-left)
+		+css-lock(88,72,768,1440,padding-right)
 		background: #303D57
 		box-shadow: 60px 82px 124px 0 rgba(0,0,0,0.46)
 		vertical-align: top
 		display: inline-block
 		align-self: flex-end
+		+sm
+			padding: 26px 20px 88px 36px
+			max-width: 248px
+			margin: 0 auto
 		&_black
 			background-color: #1A1919
 		.main-section_children &
 			+css-lock(0,146,1024,1440,margin-left)
+			+sm
+				margin: 0 auto
+				padding-bottom: 85px
 		.main-section_adult &
 			+css-lock(0,50,1024,1440,margin-left)
+			+sm
+				margin: 0 auto
+		.btn
+			position: absolute
+			left: 50%
+			transform: translate(-50%)
+			bottom: 22px
+			width: calc(100vw - 60px)
+			display: none
+			+sm
+				display: block
 	&__list
 		+ftb
 		color: #fff
@@ -124,6 +258,8 @@
 				background-color: #fff
 			&:not(:last-child)
 				margin-bottom: 20px
+				+sm
+					margin-bottom: 18px
 		a
 			color: currentColor
 			transition: opacity .3s
@@ -138,3 +274,7 @@
 		justify-content: space-between
 		display: flex
 		align-self: flex-end
+		+sm
+			justify-content: space-between
+			min-height: 100vh
+			flex-direction: column

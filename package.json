@@ -66,6 +66,8 @@
     "webpack-bundle-analyzer": "^1.5.3"
   },
   "dependencies": {
-    "iscroll": "^5.2.0"
+    "iscroll": "^5.2.0",
+    "@fancyapps/fancybox": "^3.3.5",
+    "slick-carousel": "^1.8.1"
   }
 }

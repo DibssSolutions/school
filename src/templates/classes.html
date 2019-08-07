@@ -1,0 +1,359 @@
+---
+title: Classes
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	<!-- begin hero -->
+	<div class="hero js-lazy" data-src="./img/classes-hero.jpg"></div>
+	<!-- end hero -->
+	<div class="inner">
+		<div class="wrap">
+			<!-- begin section -->
+			<div class="section">
+				<h2 class="section__title title text-uppercase">Балет для детей</h2>
+				<div class="section__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus</p>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Индивидуальные занятия</h3>
+				<div class="individually">
+					<div class="individually__img">
+						<img  class="js-lazy" data-src="./img/img-individually.jpg" alt="img">
+					</div>
+					<div class="individually__wrap">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						<div class="individually__footer">
+							<a href="#" class="btn" data-modal-control="signup">Записаться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Процесс</h3>
+				<div class="processes">
+					{% for i in range(0,3) %}
+					<div class="processes__col">
+						<div class="process">
+							<div class="process__inner">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+					    </div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Школы</h3>
+				<div class="schools">
+					{% for i in range(0,5) %}
+					<div class="schools__col">
+						<a href="#" class="school">
+							<div class="school__inner">
+								<div class="school__img">
+									<img  class="js-lazy" data-src="http://placeimg.com/560/304/any" alt="img">
+								</div>
+								<div class="school__title">Солянка</div>
+								<div class="school__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+								</div>
+								<div class="school__tel">+7 (495) 204-22-77 (доб 111)</div>
+							</div>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h2 class="section__title title">Что взять на первое занятие</h2>
+				<div class="news-item">
+					<div class="news-item__img"><img class="js-lazy" data-src="http://placeimg.com/640/728/any" alt="img"></div>
+					<div class="news-item__wrap">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+						<div class="news-item__footer">
+							<a href="#" class="btn">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h2 class="section__title title">Расписание</h2>
+				<div class="schedule-wrap">
+					<table class="schedule">
+						<thead>
+							<tr>
+								<th>Время</th>
+								<th>Понедельник</th>
+								<th>Вторник</th>
+								<th>Среда</th>
+								<th>Четверг</th>
+								<th>Пятница</th>
+								<th>Суббота</th>
+								<th>Воскресение</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>9:00</td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>10:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>11:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>12:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>13:00</td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>14:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>15:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>16:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>17:00</td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+								<td>
+									<div class="schedule__info">
+										<p class="schedule__services">Балет для детей</p>
+										<p>Иванова Ольга</p>
+									</div>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>18:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>19:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>20:00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Преподаватели</h3>
+				<div class="slider slider_teacher js-slider" data-slide-show="5">
+					{% for i in range(0,5) %}
+					<div class="slider__slide">
+						<!-- begin item -->
+						<a href="#" class="item">
+							<div class="item__img">
+								<img data-lazy="https://i.pravatar.cc/200" alt="img">
+							</div>
+							<div class="item__name">Chad Howell</div>
+							<div class="item__text">How Does An Lcd Screen Work</div>
+						</a>
+						<!-- end item -->
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Отзывы</h3>
+				<div class="slider slider_review js-slider" data-slide-show="1" data-slide-show-md="1" data-slide-show-sm="1">
+					{% for i in range(0,2) %}
+					<div class="slider__slide">
+						<!-- begin review -->
+						<div class="review">
+							<div class="review__topic"> <!-- or add link -->
+								<div class="review__img">
+									<img data-lazy="https://i.pravatar.cc/200" alt="img">
+								</div>
+								<div class="review__name">Polly Allison</div>
+							</div>
+							<div class="review__text">One of the popular questions is – why my logo should be custom? If logo is created with the use of a clipart (premade graphic elements from the public collections) it may look like or be identical to other logos and even your competitors’ logos. This will make identification of your company difficult or your logo may be easily mixed up with logo of another company. This situation may harm your reputation and money invested in marketing of your brand will be wasted. Good company logo reflects the main point of your company, its values and helps in successful development of the business. Also, it is important to distinguish the logo design for big companies and start-ups. Logo for the big company may consist only of a one graphic element (Nike swoosh) and it will be easily identifiable but for small company such logo is a bad idea because you will need to spent huge amounts of money to promote it.</div>
+						</div>
+						<!-- end review -->
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Магазин</h3>
+				<div class="slider slider_review js-slider" data-slide-show="1" data-slide-show-md="1" data-slide-show-sm="1">
+					{% for i in range(0,2) %}
+					<div class="slider__slide">
+						<div class="news-item">
+							<div class="news-item__img"><img class="js-lazy" data-src="http://placeimg.com/640/728/any" alt="img"></div>
+							<div class="news-item__wrap">
+								<h4 class="news-item__title">Kevin Strickland</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. </p>
+								<div class="news-item__footer">
+									<a href="#" class="btn">Купить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<h3 class="section__title title">Галерея</h3>
+				<div class="slider js-slider" data-slide-show="2" data-slide-show-md="2" data-slide-show-sm="1">
+					{% for i in range(0,5) %}
+					<a href="http://placeimg.com/1500/600/any" class="slider__slide" data-fancybox="gallery">
+						<img data-lazy="http://placeimg.com/990/600/any" alt="img" >
+					</a>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end section -->
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+	{% include "partials/_modal.html" %}
+
+{% endblock %}

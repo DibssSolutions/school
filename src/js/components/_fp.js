@@ -13,7 +13,8 @@ WIN.resize(() => {
 });
 
 function fp() {
-  if (WIN.width() <= 1024) {
+  if (!fullpageContainer.length) return;
+  if (WIN.width() <= 767) {
     if (!fullpageContainer.hasClass(INIT) || BODY.hasClass(mobClass)) return;
     BODY.addClass(mobClass);
     $.fn.fullpage.destroy('all');
@@ -35,7 +36,7 @@ function initFullpage() {
     responsiveWidth: 10,
     responsiveHeight: 10,
     scrollingSpeed: 800,
-    responsive: 768,
+    responsive: 767,
     css3: true
   });
 }

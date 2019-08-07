@@ -7,24 +7,64 @@
 	left: 0
 	width: 100%
 	z-index: 10
+	+md
+		padding: 6px 0
 	&:not(.header_main)
 		color: #1B273D
 		background-color: #fff
 	&_main
 		color: #fff
+		+md
+			background: #2A324C
 	&__inner
 		display: flex
 		justify-content: space-between
 		align-items: center
+	&__logo
+		+md
+			margin: 0 auto
 	&__nav
+		+md
+			position: absolute
+			top: 0
+			left: 0
+			width: 100vw
+			height: 100vh
+			overflow: auto
+			margin-left: -100vw
+			transition: transform .4s ease-in-out
+			background-color: #fff
+		.header_main &
+			+md
+				background-color: #2A324C
+		.is-open-menu &
+			+md
+				transform: translateX(100vw)
 	&__phone
 		color: currentColor
 		transition: opacity .3s
 		+hover
 			opacity: .7
-
+	&__title
+		margin: 0 auto 50px
+		max-width: 270px
+		+fny
+		font-size: 30px
+		line-height: 1
+		letter-spacing: -0.002em
+		text-align: center
+		display: none
+		+md
+			display: block
+		.header_main &
+			background-color: #fff
 .logo
+	position: relative
+	z-index: 1
 	svg
+		+md
+			width: 32px
+			height: 39px
 		path
 			.header_main &
 				fill: #fff !important
@@ -33,15 +73,27 @@
 	display: flex
 	flex-wrap: wrap
 	align-items: center
+	+md
+		padding: 70px 0 120px
+		text-align: center
+		display: block
 	&__list
 		display: flex
 		flex-wrap: wrap
+		+md
+			flex-direction: column
+			width: 100%
+			text-align: center
 		&:not(:last-child)
 			+css-lock(30,70,1024,1440,margin-right)
+			+md
+				margin: 0 0 50px
 	li
 		display: block
 		&:not(:last-child)
 			+css-lock(30,70,1024,1440,margin-right)
+			+md
+				margin: 0 0 50px
 		a
 			color: currentColor
 			opacity: .5
@@ -50,3 +102,45 @@
 				opacity: .7
 			&.is-active
 				opacity: 1
+.btn-menu
+	position: relative
+	z-index: 1
+	width: 13px
+	height: 11px
+	background-color: transparent
+	display: none
+	+md
+		display: inline-block
+	&:before
+		position: absolute
+		content: ''
+		top: -10px
+		left: -10px
+		right: -10px
+		bottom: -10px
+	&__line
+		position: absolute
+		left: 0
+		width: 13px
+		height: 1px
+		background-color: #1B273D
+		transform-origin: left
+		transition: transform .4s, width .4s, opacity .4s
+		+gpu
+		.header_main &
+			background-color: #fff
+		&:first-child
+			top: 0
+			.is-open-menu &
+				transform: rotate(45deg)
+				width: 14px
+		&:nth-child(2)
+			top: 5px
+			.is-open-menu &
+				transform: scale(0)
+				opacity: 0
+		&:last-child
+			bottom: 0
+			.is-open-menu &
+				transform: rotate(-45deg)
+				width: 14px

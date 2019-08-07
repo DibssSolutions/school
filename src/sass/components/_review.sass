@@ -1,0 +1,50 @@
+.review
+	margin-top: 50px
+	padding: 90px 70px
+	background-color: #F7F7F9
+	+md
+		padding: 90px 50px 50px
+	+sm
+		padding: 90px 15px 15px
+	&__topic
+		margin-top: -140px
+		display: block
+		&:not(:last-child)
+			margin-bottom: 15px
+	&__img
+		position: relative
+		overflow: hidden
+		margin: 0 auto 15px
+		width: 100px 
+		height: 100px
+		border-radius: 50%
+		display: block
+		background-color: darken(#F7F7F9, 10%)
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: center
+			transition: transform .3s, opacity .3s
+			display: block
+	&__name
+		margin: 0 auto
+		font-size: 15px
+		font-weight: 700
+		line-height: 1.1
+		color: #5B5E77
+		letter-spacing: 0
+		transition: color .3s
+		display: block
+		text-align: center
+	&__text
+		font-size: 15px
+
+a.review__topic
+	+hover
+		.review
+			&__img
+				img
+					transform: scale(1.1)
+			&__name
+				color: #6E7FFC

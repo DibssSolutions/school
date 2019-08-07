@@ -1,0 +1,47 @@
+---
+title: Shop
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	<!-- begin hero -->
+	<div class="hero js-lazy" data-src="./img/hero-img.jpg"></div>
+	<!-- end hero -->
+	<div class="inner">
+		<div class="wrap wrap_psm">
+			<!-- begin section -->
+			<div class="section">
+				<h2 class="section__title title">Магазин</h2>
+				<div class="news-item">
+					<div class="news-item__img"><img class="js-lazy" data-src="http://placeimg.com/640/728/any" alt="img"></div>
+					<div class="news-item__wrap">
+						<h4 class="news-item__title">Kevin Strickland</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. </p>
+						<div class="news-item__footer">
+							<a href="#" class="btn">Купить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+			<!-- begin section -->
+			<div class="section">
+				<div class="news-item">
+					<div class="news-item__img"><img class="js-lazy" data-src="http://placeimg.com/640/728/any" alt="img"></div>
+					<div class="news-item__wrap">
+						<h4 class="news-item__title">Kevin Strickland</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. </p>
+						<div class="news-item__footer">
+							<a href="#" class="btn">Купить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section -->
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

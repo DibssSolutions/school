@@ -1,0 +1,107 @@
+.footer
+	padding: 40px 0
+	text-align: center
+	color: #fff
+	font-family: 'PT Sans', sans-serif
+	font-size: 14px
+	line-height: 1.2
+	background-image: linear-gradient(134deg, #4D4063 0%, #282136 100%)
+	+sm
+		padding: 30px 0
+	&__inner
+		margin: 0 auto
+		padding: 0 15px
+		max-width: 748px
+	&__logo
+		margin-bottom: 43px
+		+sm
+			margin-bottom: 30px
+	&__row
+		padding: 13px 0
+		align-items: center
+		display: flex
+		border-top: 1px solid rgba(#fff, .1)
+		border-bottom: 1px solid rgba(#fff, .1)
+		&:not(:last-child)
+			margin-bottom: 23px
+	&__col
+		position: relative
+		+fs(50%)
+		text-align: left
+		&:first-child
+			padding-right: 30px
+			text-align: right
+			+sm
+				padding-right: 15px
+		&:last-child
+			padding-left: 30px
+			border-left: 1px solid #fff
+			+sm
+				padding-left: 15px
+		a
+			color: currentColor
+			transition: opacity .3s
+			+hover
+				opacity: .7
+	&__soc
+		&:not(:last-child)
+			margin-bottom: 23px
+	&__copy
+		font-size: 14px
+		font-size: 14px
+		color: #FFFFFF
+		text-transform: lowercase
+		letter-spacing: 0
+		text-align: center
+.logo-text
+	display: inline-flex
+	+fny
+	align-items: center
+	font-size: 29px
+	color: #FFFFFF
+	letter-spacing: -0.002em
+	text-align: left
+	color: #fff
+	line-height: 1
+	&__img
+		width: 53px
+		height: 65px
+		flex-shrink: 0
+		img
+			max-width: 100%
+			display: block
+	&__text
+		padding-left: 20px
+		flex-grow: 1
+		max-width: 353px
+		letter-spacing: -0.03em
+		+sm
+			display: none
+.soc
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	li
+		position: relative
+		width: 30px
+		height: 30px
+		overflow: hidden
+		border-radius: 30px
+		&:not(:last-child)
+			margin-right: 40px
+			+sm
+				margin-right: 15px
+	&_sm
+		li
+
+			&:not(:last-child)
+				margin-right: 20px
+	a
+		color: currentColor
+		transition: opacity .3s
+		display: block
+		+hover
+			opacity: .7
+	img
+		max-width: 100%
+		display: block

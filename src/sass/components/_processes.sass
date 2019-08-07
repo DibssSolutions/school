@@ -1,0 +1,43 @@
+.processes
+	margin: 0 -10px -20px
+	display: flex
+	flex-wrap: wrap
+	counter-reset: list
+	&__col
+		padding: 0 10px
+		margin-bottom: 20px
+		+fs(33.3%)
+		+sm
+			+fs(100%)
+.process
+	position: relative
+	padding: 0 30px 30px
+	display: block
+	+sm
+		padding: 0 15px 15px
+	&:before
+		position: relative
+		z-index: 1
+		counter-increment: list 1
+		content: "0" counter(list)
+		font-family: 'Roboto', sans-serif
+		margin-bottom: 7px
+		display: block
+		font-weight: bold
+		font-size: 100px
+		color: #CCCDDA
+		line-height: 1.17
+		letter-spacing: 0
+		+sm
+			line-height: 1
+	&:after
+		position: absolute
+		content: ''
+		top: 32px
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: #F7F7F9
+	&__inner
+		position: relative
+		z-index: 1

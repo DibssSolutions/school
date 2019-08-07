@@ -22,13 +22,172 @@
 // CUSTOM PADDING ON BREAKPOINTS - NOT INCLUDED IN MIXIN
 +generate_grid()
 
+.out
+	position: relative
+	padding-top: 114px
+	overflow: hidden
+	&_main
+		padding-top: 0
+
 .inner-lg
 	margin: 0 auto
 	padding: 0 100px
 	+css-lock(15,100,375,1440,padding-left)
 	+css-lock(15,100,375,1440,padding-right)
+	+sm
+		padding-left: 15px
+		padding-right: 15px
 
 .inner
 	margin: 0 auto
 	padding: 0 15px
 	max-width: 1192px
+
+.hero
+	height: 800px
+	background-position: center 0
+	background-size: cover
+	background-repeat: no-repeat
+	+md
+		height: 600px
+	+sm
+		height: 255px
+	& + .inner
+		margin-top: -409px
+		+md
+			margin-top: -300px
+		+sm
+			margin-top: -134px
+.wrap
+	padding: 78px 81px 90px
+	background-color: #fff
+	&_psm
+		padding-top: 30px
+	+md
+		padding: 45px 36px 40px
+	+sm
+		padding: 30px 15px
+
+.section
+	&:not(:last-child)
+		margin-bottom: 90px
+		+md
+			margin-bottom: 50px
+	&__bottom
+		margin-top: 60px
+	&__teacher
+		position: relative
+		margin: -177px auto 27px
+		width: 150px
+		height: 150px
+		border-radius: 50%
+		overflow: hidden
+		background-color: #F7F7F9
+		+sm
+			margin-bottom: 20px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: center
+			display: block
+	&__lessons
+		&:not(:first-child)
+			margin-top: 60px
+			+md
+				margin-top: 40px
+	&__contacts
+		text-align: center
+		font-size: 25px
+		color: #B6B8CB
+		letter-spacing: 0
+		line-height: 1.76
+		+sm
+			font-size: 18px
+		&:not(:first-child)
+			margin-top: 40px
+			+sm
+				margin-top: 20px
+	&__title
+		&:not(:last-child)
+			margin-bottom: 30px
+			+md
+				margin-bottom: 20px
+	&__text,
+	&__content
+		&:not(:first-child)
+			margin-top: 30px
+			+md
+				margin-top: 20px
+		p
+			&:not(:last-child)
+				margin-bottom: 25px
+				+sm
+					margin-bottom: 15px
+		img
+			max-width: 100%
+			display: block
+			&:not(:last-child)
+				margin-bottom: 30px
+				+sm
+					margin-bottom: 15px
+
+	&__map
+		margin: 0 -81px
+		+md
+			margin: 0 -36px
+		+sm
+			margin: 0 -15px
+	&__hero
+		margin: -78px -81px 53px
+		+md
+			margin: -45px -36px 30px
+		+sm
+			margin: -30px -15px 20px
+		img
+			max-width: 100%
+			display: block
+	&__subscribe
+		margin-top: 15px
+	&__soc
+		margin-top: 37px
+		padding-top: 15px
+		border-top: 1px solid #D6D6D6
+		+sm
+			margin-top: 20px
+	&__soc-title
+		margin-bottom: 20px
+		font-weight: 500
+		font-size: 15px
+		letter-spacing: 0
+		color: #5B5E77
+		text-align: center
+	&__head
+		margin-bottom: 20px
+	&__footer
+		margin-top: 30px
+		+sm
+			margin-top: 15px
+
+.head
+	&__title
+		&:not(:last-child)
+			margin-bottom: 15px
+
+.date
+	font-weight: 700
+	line-height: 1.1
+
+.description
+	padding: 0 70px
+	+md
+		padding: 0 30px
+	+sm
+		padding: 0 15px
+
+.map
+	img
+		max-width: 100%
+		display: block
+	iframe
+		width: 100% !important

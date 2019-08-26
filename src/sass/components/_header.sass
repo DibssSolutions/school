@@ -11,7 +11,7 @@
 		padding: 6px 0
 	&:not(.header_main)
 		color: #1B273D
-		background-color: #fff
+		background-color: #F7F7F9
 	&_main
 		color: #fff
 		+md
@@ -56,8 +56,8 @@
 		display: none
 		+md
 			display: block
-		.header_main &
-			background-color: #fff
+		// .header_main &
+		// 	background-color: #fff
 .logo
 	position: relative
 	z-index: 1
@@ -88,20 +88,72 @@
 			+css-lock(30,70,1024,1440,margin-right)
 			+md
 				margin: 0 0 50px
-	li
+	&__item
+		position: relative
 		display: block
 		&:not(:last-child)
 			+css-lock(30,70,1024,1440,margin-right)
 			+md
 				margin: 0 0 50px
+		+hover
+			+rmin(1024)
+				.nav__drop
+					+fadein
+	&__link
+		color: currentColor
+		opacity: .5
+		transition: opacity .3s
+		+hover
+			opacity: .7
+		&.is-active
+			opacity: 1
+		&.is-lg-disabled
+			+rmin(1024)
+				pointer-events: none
+	&__drop
+		position: absolute
+		top: 100%
+		left: 50%
+		+fnr
+		font-size: 16px
+		width: 327px
+		color: #1B273D
+		padding: 29px 34px 37px
+		transform: translateX(-50%)
+		margin-top: 23px
+		background-color: #F7F7F9
+		box-shadow: 20px 22px 44px -20px rgba(0,0,0,0.31)
+		border-radius: 20px
+		+fadeout(.3s)
+		&:before
+			position: absolute
+			content: ''
+			top: -23px
+			left: 0
+			right: 0
+			bottom: 100%
+		&_md
+			width: 596px
+		li
+			display: block
+			&:not(:last-child)
+				margin-bottom: 8px
 		a
 			color: currentColor
-			opacity: .5
 			transition: opacity .3s
 			+hover
 				opacity: .7
-			&.is-active
-				opacity: 1
+	&__title
+		font-size: 24px
+		margin-bottom: 30px
+	&__row
+		margin: 0 -15px
+		display: flex
+	&__col
+		padding: 0 15px
+		+fs(50%)
+		&_full
+			+fs(100%)
 .btn-menu
 	position: relative
 	z-index: 1
